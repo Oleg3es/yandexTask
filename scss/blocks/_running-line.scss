@@ -1,0 +1,44 @@
+.running-line {
+    @include fluid-text(22, 16);
+    
+    display: flex;
+    gap: 30px;
+    background-color: var(--color-red);
+
+    &__list {
+        flex-shrink: 0;
+        display: flex;
+        gap: 30px;
+        counter-reset: rinning-line__item;
+        justify-content: space-around;
+        min-width: 100%;
+        animation: scroll 10s linear infinite;
+        height: 60px;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+        text-transform: uppercase;
+        color: var(--color-white);
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: -20px;
+            width: 6px;
+            height: 6px;
+            border-radius: var(--border-radius-circle);
+            background-color: currentColor;
+        }
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
