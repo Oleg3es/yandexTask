@@ -1,0 +1,39 @@
+.stages-of-transformation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 54px;
+
+    &__title {
+        @include fluid-text(54, 36);
+
+        max-width: 766px;
+        display: flex;
+        position: relative;
+
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+        }
+
+        & > a {
+            @include fluid-text(20, 18);
+
+            color: var(--color-text-blue);
+            font-family: var(--font-family-accent);
+            max-width: 280px;
+            position: absolute;
+            bottom: 10px;
+            right: 220px;
+
+            @include desktop {
+                position: static;
+            }
+        }
+    }
+
+    &__body {
+        margin-top: 54px;
+    }
+}

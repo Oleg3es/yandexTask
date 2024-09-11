@@ -1,0 +1,74 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 56px);
+    overflow: hidden;
+    --gap: 0em;
+    --gap-vertical: 0;
+    --line-offset: calc(var(--gap) / 2);
+    --line-offset-vertical: calc(var(--gap-vertical) / 2);
+    --line-thicknes: 2px;
+    --line-color: var(--color-borders-grid);
+
+    @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 38px); //38px
+    }
+
+    &__item {
+        position: relative;
+
+        &:nth-child(n + 3) {
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: var(--line-color);
+                z-index: 1;
+            }
+    
+            &::after {
+                inline-size: 100vw;
+                block-size: var(--line-thicknes);
+                inset-inline-start: 0;
+                inset-block-start: calc(var(--line-offset) * -1);
+
+                @include mobile {
+                    block-size: 0;
+                }
+            }
+        }
+
+        @include mobile {
+            &:nth-child(2n + 3) {
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-color: var(--line-color);
+                    z-index: 1;
+                }
+        
+                &::after {
+                    inline-size: 100vw;
+                    block-size: var(--line-thicknes);
+                    inset-inline-start: 0;
+                    inset-block-start: calc(var(--line-offset) * -1);
+                }
+            }
+        }
+        
+        &:nth-child(even) {
+            &::before {
+                inline-size: var(--line-thicknes);
+                block-size: 100vw;
+                inset-inline-start: 0;
+                inset-block-start: calc(var(--line-offset-vertical) * -1);
+
+                @include mobile {
+                    inline-size: 0;
+                }
+            }
+        }
+    }
+}

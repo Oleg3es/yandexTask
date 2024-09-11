@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./scss/style.css">
     <title>Клуб четырех коней</title>
@@ -18,18 +19,17 @@
                 <div class="hero">
                     <div class="hero__inner container">
                         <a href="#" class="hero__logo">
-                            <img 
-                            class="logo__image"
-                            src="./images/logo.svg" 
-                            alt="Клуб четырёх коней"
-                            width="245.17" height="36" loading="lazy">
+                            <img class="logo__image" src="./images/logo.svg" alt="Клуб четырёх коней" width="245.17"
+                                height="36" loading="lazy">
                         </a>
                         <div class="hero__body">
                             <h1 class="hero__title">
-                                Превратите уездный город <span class="hero__title-alignment">в столицу земного шара</span>
+                                Превратите уездный город <span class="hero__title-alignment">в столицу земного
+                                    шара</span>
                             </h1>
                             <div class="hero__description">
-                                <p>Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+                                <p>Оплатите взнос на телеграммы для организации Международного васюкинского турнира
+                                    по шахматам</p>
                             </div>
                             <div class="hero__buttons">
                                 <form action="#support-the-tournament" class="hero__buttons-wrapper">
@@ -68,13 +68,165 @@
                 </li>
             </ul>
         </div>
-        <section class="section">
+        <section class="section section__support-the-tournament container">
             <div class="section__body">
-                <div class="support-the-tournament">
-                    
+                <div class="support-the-tournament hidden-mobile" id="support-the-tournament">
+                    <h2 class="support-the-tournament__title">
+                        Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: <span>«Плодотворная
+                            дебютная идея»</span>
+                    </h2>
+                    <img class="support-the-tournament__image" src="./images/Mask group.svg" alt="Васюкинский турнир"
+                        width="394" height="240" loading="lazy">
+                </div>
+                <div class="support-the-tournament visible-mobile" id="support-the-tournament">
+                    <h2 class="support-the-tournament__title">
+                        Чтобы поддержать Международный васюкинский турнир
+                    </h2>
+                    <img class="support-the-tournament__image" src="./images/Mask group.svg" alt="Васюкинский турнир"
+                        width="394" height="240" loading="lazy">
+                    <h2 class="support-the-tournament__title"> посетите лекцию на тему: <span>«Плодотворная
+                            дебютная идея»</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="section section__more-about-the-tournament container">
+            <div class="section__body">
+                <div class="more-about-the-tournament" id="more-about-the-tournament">
+                    <img src="./images/more.svg" alt="Сеанс одновременной игры" class="more-about-the-tournament__image"
+                        width="474" height="527" loading="lazy">
+                    <div class="more-about-the-tournament__body">
+                        <h2 class="more-about-the-tournament__title">
+                            и Сеанс <span>одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера
+                        </h2>
+                        <div class="more-about-the-tournament__description">
+                            <ul class="more-about-the-tournament__description-list grid">
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>Место проведения:</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>Клуб «Картонажник»</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>Дата и время мероприятия:</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>22 июня 1927 г. в 18:00</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>Стоимость входных билетов:</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>20 коп.</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>Плата за игру: <span
+                                            class="more-about-the-tournament__description-item-price visible-mobile">
+                                            &nbsp 50 коп. </span></p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item hidden-mobile">
+                                    <p>50 коп.</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p>Взнос на телеграммы:</p>
+                                </li>
+                                <li class="more-about-the-tournament__description-item grid__item">
+                                    <p><span class="more-about-the-tournament__description-line">100 руб.</span>&nbsp 21
+                                        руб. 16 коп.</p>
+                                </li>
+                            </ul>
+                            <div class="more-about-the-tournament__description-administrator">
+                                <p>По всем вопросам обращаться в администрацию к К. Михельсону</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section__stages-of-transformation container">
+            <div class="section__body">
+                <div class="stages-of-transformation">
+                    <h2 class="stages-of-transformation__title">
+                        Этапы преображения Васюков<a href="#">Будущие источники обогащения васюкинцев</a>
+                    </h2>
+                    <div class="stages-of-transformation__body">
+                        <ul class="stages-of-transformation__body-list grid__stages">
+                            <li class="stages-of-transformation__body-item grid__stages-item">
+                                <article class="stage">
+                                    <div class="stage__number">
+                                        <p>1</p>
+                                    </div> 
+                                    <div class="stage__description">
+                                        <p>Строительство железнодорожной магистрали Москва-Васюки</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="stages-of-transformation__body-item grid__stages-item">
+                                <article class="stage">
+                                    <div class="stage__number">
+                                        <p>2</p>
+                                    </div> 
+                                    <div class="stage__description">
+                                        <p>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="stages-of-transformation__body-item grid__stages-item">
+                                <article class="stage">
+                                    <div class="stage__number">
+                                        <p>3</p>
+                                    </div> 
+                                    <div class="stage__description">
+                                        <p>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="stages-of-transformation__body-item grid__stages-item">
+                                <article class="stage">
+                                    <div class="stage__number">
+                                        <p>4</p>
+                                    </div> 
+                                    <div class="stage__description">
+                                        <p>Строительство дворца для турнира</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="stages-of-transformation__body-item grid__stages-item">
+                                <article class="stage">
+                                    <div class="stage__number">
+                                        <p>5</p>
+                                    </div> 
+                                    <div class="stage__description">
+                                        <p>Размещение гаражей для гостевого автотранспорта</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="stages-of-transformation__body-item grid__stages-item">
+                                <article class="stage">
+                                    <div class="stage__number">
+                                        <p>6</p>
+                                    </div> 
+                                    <div class="stage__description">
+                                        <p>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="stages-of-transformation__body-item grid__stages-item">
+                                <article class="stage">
+                                    <div class="stage__number">
+                                        <p>7</p>
+                                    </div> 
+                                    <div class="stage__description">
+                                        <p>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>

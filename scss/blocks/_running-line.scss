@@ -4,12 +4,13 @@
     display: flex;
     gap: 30px;
     background-color: var(--color-red);
+    overflow: hidden;
 
     &__list {
         flex-shrink: 0;
         display: flex;
         gap: 30px;
-        counter-reset: rinning-line__item;
+        counter-reset: running-line__item;
         justify-content: space-around;
         min-width: 100%;
         animation: scroll 10s linear infinite;

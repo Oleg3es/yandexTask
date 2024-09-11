@@ -1,0 +1,25 @@
+.support-the-tournament {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__title {
+        max-width: 764px;
+        line-height: 48.6px;
+        text-transform: uppercase;
+
+        @include mobile {
+            max-width: 335px;
+        }
+        
+        & > span {
+            color: var(--color-red);
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.section {
+
+    &__support-the-tournament{
+        padding-top: 107px;
+
+        @include mobile {
+            padding-top: 48px;
+        }
+    }
+
+    &__more-about-the-tournament {
+        padding-top: 64px;
+    }
+
+    &__stages-of-transformation {
+        padding-top: 200px;
+    }
+}

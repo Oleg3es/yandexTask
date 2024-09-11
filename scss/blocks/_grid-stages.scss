@@ -1,0 +1,41 @@
+.grid__stages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(112px, 112px, 136px);
+    grid-template-areas: 
+    "a b c"
+    "d e c"
+    "f j j";
+    gap: 20px;
+
+    &-item {
+
+        &:nth-child(1) {
+            grid-area: a;
+        }
+
+        &:nth-child(2) {
+            grid-area: b;
+        }
+
+        &:nth-child(3) {
+            grid-area: c;
+        }
+
+        &:nth-child(4) {
+            grid-area: d;
+        }
+
+        &:nth-child(5) {
+            grid-area: e;
+        }
+
+        &:nth-child(6) {
+            grid-area: f;
+        }
+
+        &:nth-child(7) {
+            grid-area: j;
+        }
+    }
+}
